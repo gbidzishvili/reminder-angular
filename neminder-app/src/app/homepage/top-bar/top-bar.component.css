@@ -1,0 +1,32 @@
+
+.inner-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 320px
+    /* gap: 100px; */
+}
+.reminder{
+    color: orangered;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.icons-cont{
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+mat-icon{
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+.thin{
+    font-weight:lighter
+}
