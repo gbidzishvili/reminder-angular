@@ -6,3 +6,10 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+    --primary-button: orangered;
+    --primary-lightorange: #ff5f27;
+    --primary-background: #f9f9f95c;
+    --primary-gray: #gray;
+    --primary-lightgray:lightgray
+  }

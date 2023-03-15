@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+.inner-cont{
+    background-color: var(--primary-background);
+    min-width: 320px;
+    height: 100vh;
+    padding: 0 10px;
+}

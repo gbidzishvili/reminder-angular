@@ -1,13 +1,13 @@
 
-.inner-cont{
+.cont{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 320px
-    /* gap: 100px; */
+    min-width: 320px;
+    height:7.5vh;
 }
 .reminder{
-    color: orangered;
+    color: var(--primary-button);
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 32px;
     font-weight: 700;

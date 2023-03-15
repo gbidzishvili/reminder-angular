@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepageComponent } from './homepage/homepage.component';
+import { CompletedComponent } from './features/completed/completed.component';
+import { HomepageComponent } from './features/homepage/homepage.component';
+import { TasksComponent } from './features/tasks/tasks.component';
 const routes: Routes = [
   {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:"home",component:HomepageComponent}
+  {path:"home",component:HomepageComponent},
+  {path:'tasks',component:TasksComponent},
+  {path:'completed',component:CompletedComponent}
 ];
 
 @NgModule({

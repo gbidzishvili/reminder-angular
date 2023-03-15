@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="inner-cont">
+      <app-title-bar></app-title-bar>
+      <form>
+          <input type="text" placeholder="Title">
+          <div class="inp-cont">
+            <input type="text" placeholder="Memo">
+            <mat-icon class="icon">palette</mat-icon>
+          </div>
+          <div class="inp-cont">
+            <input type="text" placeholder="Upload Image">
+            <mat-icon class="icon">add_photo_alternate</mat-icon>
+          </div>
+          <div class="collapsed" [ngClass]="{'expand': timeIsExpanded}">
+            <div class="preview">
+              <span> Time</span><mat-icon (click)="timeIsExpanded = !timeIsExpanded">expand_more</mat-icon>
+            </div>
+          </div>
+          <div class="collapsed" [ngClass]="{'expand': placeIsExpanded}">
+            <div class="preview">
+              <span>Place</span><mat-icon (click)="placeIsExpanded = !placeIsExpanded">expand_more</mat-icon>
+            </div>
+          </div>
+          <label for=""><mat-icon>notifications_off</mat-icon> <span> You won't get notification.</span></label>
+          <div class="bottom-actions">
+            <button routerLink="/home">Cancel</button>
+            <button class="pale">Save</button>
+          </div>
+    </form>
+    </div>
+  </div>
