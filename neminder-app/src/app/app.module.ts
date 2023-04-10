@@ -16,6 +16,13 @@ import { SearchComponent } from './features/homepage/search/search.component';
 import { TasksComponent } from './features/tasks/tasks.component';
 import { TitleBarComponent } from './shared/components/title-bar/title-bar.component';
 import { CompletedComponent } from './features/completed/completed.component';
+import { SettingsComponent } from './features/settings/settings.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { MatDialog } from '@angular/material/dialog';
+import { MatCalendar } from '@angular/material/datepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +33,8 @@ import { CompletedComponent } from './features/completed/completed.component';
     SearchComponent,
     TasksComponent,
     TitleBarComponent,
-    CompletedComponent
+    CompletedComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,8 +42,15 @@ import { CompletedComponent } from './features/completed/completed.component';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    NgxMaterialTimepickerModule,
+    NgxMaterialTimepickerModule.setLocale('en-US'),
+    MatDialog,
+    // MatCalendar
   ],
   providers: [],
   bootstrap: [AppComponent]

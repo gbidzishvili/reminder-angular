@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-title-bar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./title-bar.component.css']
 })
 export class TitleBarComponent {
-  public title = "Add Task"
+  @Input() title:string;
 }

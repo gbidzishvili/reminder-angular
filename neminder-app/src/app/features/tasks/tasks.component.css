@@ -1,7 +1,7 @@
 .container{
   display: flex;
   justify-content:center;
- 
+  background-color: #e3e3e3;
 }
 .inner-cont{
   display: flex;
@@ -59,7 +59,7 @@ label span{
 .collapsed{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   height: 4.5vh;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -71,14 +71,44 @@ label span{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
+  flex-direction: column;
+  padding: 0.5vh 0 0 10px;
   height: 4.5vh;
   font-weight: 600;
   width: 100%;
-  position: absolute;
+}
+.default{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+.time-picker-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.chosenTime{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+}
+.width{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
 }
 .expand{
-  height: 8vh;
+  height: 25vh;
   align-items: flex-start;
 }
 .bottom-actions{
@@ -109,3 +139,5 @@ button{
   cursor: pointer;
   box-shadow: 1px 1px 5px var(--primary-lightorange);
 }
+
+

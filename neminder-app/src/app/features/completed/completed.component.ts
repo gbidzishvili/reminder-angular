@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./completed.component.css']
 })
 export class CompletedComponent {
-
+  public title = 'Completed'
 }
